@@ -12,7 +12,7 @@ In this lab, you will write an Ansible playbook to back up configurations of net
 
 !!! tip
 
-    The lab can be run with GitHub Codespaces. For information on how to run the netlab topology on your infrastructure, take a look at [netlab](https://netlab.tools/install/).
+    The lab can be run with [GitHub Codespaces](https://github.com/codespaces/new?ref=main&repo=837679935). For information on how to run the netlab topology on your infrastructure, take a look at [netlab](https://netlab.tools/install/).
 
 ## Inventory
 
