@@ -1,0 +1,36 @@
+defaults.sources.extra: [ defaults.yml ]
+
+module: [ ospf, bgp ]
+
+nodes:
+  r1:
+    device: cumulus
+    bgp.as: 65000
+  r2:
+    device: frr
+    bgp.as: 65000
+  r3:
+    device: vyos
+    bgp.as: 65000
+  r4:
+    device: srlinux
+    bgp.as: 65000
+links:
+- r1:
+  r3:
+  name: r1-to-r3
+- r1:
+  r4:
+  name: r1-to-r4
+- r3:
+  r4:
+  name: r3-to-r4
+- r2:
+  r3:
+  name: r2-to-r3
+- r2:
+  r4:
+  name: r2-to-r4
+- r1:
+  r2:
+  name: r1-to-r2

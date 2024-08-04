@@ -1,0 +1,10 @@
+netlab/clab_files/*
+netlab/clab-netlab/*
+netlab/group_vars/*
+netlab/host_vars/*
+netlab/.clab.yml.bak
+netlab/ansible.cfg
+netlab/clab.yml
+netlab/hosts.yml
+netlab/netlab.lock
+netlab/netlab.snapshot.yml
