@@ -18,7 +18,7 @@ In this lab, you will write an Ansible playbook to back up configurations of net
 
 The inventory is prepared, but if you change the device types or the topology, you will need to update the inventory accordingly. You can inspect the inventory using `ansible-inventory`.
 
-``` titel="ansible-inventory -i inventory.yaml --graph --vars"
+``` title="ansible-inventory -i inventory.yaml --graph --vars"
 @all:
   |--@routers:
   |  |--@cumulus:
