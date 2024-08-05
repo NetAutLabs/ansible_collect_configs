@@ -5,14 +5,15 @@ tags:
   - codespaces
 ---
 
+# Collect Configs
+
+
 |             |                                                                                                                |
 | ----------: | :------------------------------------------------------------------------------------------------------------- |
 | Level       | beginner                                                                                                       |
 | Repo        | [https://github.com/NetAutLabs/ansible_collect_configs](https://github.com/NetAutLabs/ansible_collect_configs) |
 | Discussion  | [Discussion GitHub Repo](https://github.com/NetAutLabs/ansible_collect_configs/discussions)                    |
 | Codespaces  | :material-check: [GitHub Codespaces](https://github.com/codespaces/new?ref=main&repo=837679935)                |
-
-# Collect Configs
 
 
 In this lab, you will write an Ansible playbook to back up configurations of network devices. You will work with a provided topology of four routers set up with Netlab. The inventory is preconfigured to get you started quickly.
@@ -70,6 +71,7 @@ To interact with the virtual devices, you need to start the topology located in 
 The goal of the exercise is to write an Ansible playbook that automates the backup of all router configurations in the provided topology. The [Discussions on the GitHub Repo](https://github.com/NetAutLabs/ansible_collect_configs/discussions) can be used to discuss the lab and your solutions. 
 
 For many NOSs Ansible collections exist. For example:
+
 - Arista: [https://docs.ansible.com/ansible/latest/collections/arista/eos/index.html](https://docs.ansible.com/ansible/latest/collections/arista/eos/index.html)
 - Cisco: [https://docs.ansible.com/ansible/latest/collections/cisco/index.html](https://docs.ansible.com/ansible/latest/collections/cisco/index.html)
 - FRR: [https://docs.ansible.com/ansible/latest/collections/frr/frr/index.html](https://docs.ansible.com/ansible/latest/collections/frr/frr/index.html)
