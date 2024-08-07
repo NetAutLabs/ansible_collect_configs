@@ -5,7 +5,7 @@ tags:
   - codespaces
 ---
 
-# Collect Configs
+# Collect Configs with Ansible
 
 
 |             |                                                                                                                |
