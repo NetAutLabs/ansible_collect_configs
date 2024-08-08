@@ -5,5 +5,5 @@
         "memory": "8gb",
         "storage": "32gb"
     },
-    "postStartCommand": "sudo apt update && sudo apt install -y --no-install-recommends linux-headers-generic && sudo netlab install -y grpc"
+    "postStartCommand": "sudo apt update && sudo apt install -y --no-install-recommends linux-headers-generic && netlab install -y grpc"
 }
