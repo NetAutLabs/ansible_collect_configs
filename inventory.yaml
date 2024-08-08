@@ -2,19 +2,15 @@ all:
   children:
     routers:
       children:
-        cumulus:
+        vyos:
           hosts:
             r1:
               ansible_host: 192.168.121.101
-        frr:
-          hosts:
-            r2:
-              ansible_host: 192.168.121.102
-        vyos:
-          hosts:
             r3:
               ansible_host: 192.168.121.103
         srlinux:
           hosts:
+            r2:
+              ansible_host: 192.168.121.102
             r4:
               ansible_host: 192.168.121.104

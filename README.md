@@ -28,21 +28,32 @@ The inventory is prepared, but if you change the device types or the topology, y
 
 ``` title="ansible-inventory -i inventory.yaml --graph --vars"
 @all:
+  |--@ungrouped:
   |--@routers:
-  |  |--@cumulus:
+  |  |--@vyos:
   |  |  |--r1
-  |  |  |  |--{ansible_host = 172.20.20.3}
-  |  |  |  |--{ansible_password = root}
-  |  |  |  |--{ansible_user = root}
-  |  |  |--{ansible_password = root}
-  |  |  |--{ansible_user = root}
-  |  |--@frr:
-  |  |  |--r2
-  |  |  |  |--{ansible_host = 172.20.20.3}
+  |  |  |  |--{ansible_host = 192.168.121.101}
+  |  |  |  |--{ansible_network_os = vyos}
+  |  |  |  |--{ansible_ssh_pass = vyos}
+  |  |  |  |--{ansible_user = vyos}
+  |  |  |--r3
+  |  |  |  |--{ansible_host = 192.168.121.103}
+  |  |  |  |--{ansible_network_os = vyos}
+  |  |  |  |--{ansible_ssh_pass = vyos}
+  |  |  |  |--{ansible_user = vyos}
+  |  |  |--{ansible_network_os = vyos}
+  |  |  |--{ansible_ssh_pass = vyos}
+  |  |  |--{ansible_user = vyos}
   |  |--@srlinux:
+  |  |  |--r2
+  |  |  |  |--{ansible_connection = ansible.netcommon.httpapi}
+  |  |  |  |--{ansible_host = 192.168.121.102}
+  |  |  |  |--{ansible_network_os = nokia.srlinux.srlinux}
+  |  |  |  |--{ansible_password = NokiaSrl1!}
+  |  |  |  |--{ansible_user = admin}
   |  |  |--r4
   |  |  |  |--{ansible_connection = ansible.netcommon.httpapi}
-  |  |  |  |--{ansible_host = 172.20.20.3}
+  |  |  |  |--{ansible_host = 192.168.121.104}
   |  |  |  |--{ansible_network_os = nokia.srlinux.srlinux}
   |  |  |  |--{ansible_password = NokiaSrl1!}
   |  |  |  |--{ansible_user = admin}
@@ -50,16 +61,6 @@ The inventory is prepared, but if you change the device types or the topology, y
   |  |  |--{ansible_network_os = nokia.srlinux.srlinux}
   |  |  |--{ansible_password = NokiaSrl1!}
   |  |  |--{ansible_user = admin}
-  |  |--@vyos:
-  |  |  |--r3
-  |  |  |  |--{ansible_host = 172.20.20.3}
-  |  |  |  |--{ansible_network_os = vyos}
-  |  |  |  |--{ansible_ssh_pass = vyos}
-  |  |  |  |--{ansible_user = vyos}
-  |  |  |--{ansible_network_os = vyos}
-  |  |  |--{ansible_ssh_pass = vyos}
-  |  |  |--{ansible_user = vyos}
-  |--@ungrouped:
 ```
 
 ## Setup

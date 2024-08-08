@@ -4,14 +4,16 @@ module: [ ospf, bgp ]
 
 nodes:
   r1:
-    device: cumulus
+    device: vyos
     bgp.as: 65000
+    config: [ ssh_config ]
   r2:
-    device: frr
+    device: srlinux
     bgp.as: 65000
   r3:
     device: vyos
     bgp.as: 65000
+    config: [ ssh_config ]
   r4:
     device: srlinux
     bgp.as: 65000
