@@ -11,8 +11,10 @@ configure
 
 set service ssh
 
-# Commit, save and exit from subshell
+set system login user vyos authentication public-keys netlab type {{ lookup('file', '~/.ssh/id_ecdsa.pub').split()[0] }}
+set system login user vyos authentication public-keys netlab key {{ lookup('file', '~/.ssh/id_ecdsa.pub').split()[1] }}
 
+# Commit, save and exit from subshell
 commit
 save
 exit

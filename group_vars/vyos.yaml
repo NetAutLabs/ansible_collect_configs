@@ -1,3 +1,4 @@
+ansible_connection: ansible.netcommon.network_cli
 ansible_network_os: vyos
-ansible_ssh_pass: vyos
 ansible_user: vyos
+# ansible_ssh_pass: vyos
