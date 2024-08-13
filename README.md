@@ -14,6 +14,7 @@ tags:
 | Repo        | [https://github.com/NetAutLabs/ansible_collect_configs](https://github.com/NetAutLabs/ansible_collect_configs) |
 | Discussion  | [Discussion GitHub Repo](https://github.com/NetAutLabs/ansible_collect_configs/discussions)                    |
 | Codespaces  | :material-check: [GitHub Codespaces](https://codespaces.new/NetAutLabs/ansible_collect_configs)                |
+| NOSs        | VyOS, Nokia SR Linux                                                                                           |
 
 
 In this lab, you will write an Ansible playbook to back up configurations of network devices. You will work with a provided topology of four routers set up with Netlab. The inventory is preconfigured to get you started quickly.
