@@ -16,6 +16,11 @@ tags:
 | Codespaces  | :material-check: [GitHub Codespaces](https://codespaces.new/NetAutLabs/ansible_collect_configs)                |
 | NOSs        | VyOS, Nokia SR Linux                                                                                           |
 
+<div align=center>
+<a href="https://codespaces.new/NetAutLabs/ansible_collect_configs?quickstart=1">
+<img src="https://gitlab.com/rdodin/pics/-/wikis/uploads/d78a6f9f6869b3ac3c286928dd52fa08/run_in_codespaces-v1.svg?sanitize=true" style="width:50%"/>
+</a>
+</div>
 
 In this lab, you will write an Ansible playbook to back up configurations of network devices. You will work with a provided topology of four routers set up with Netlab. The inventory is preconfigured to get you started quickly.
 
