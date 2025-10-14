@@ -1,9 +1,9 @@
 {
-    "image": "ghcr.io/ipspace/netlab/devcontainer:1.8.4",
+    "image": "ghcr.io/ipspace/netlab/devcontainer:25.10",
     "hostRequirements": {
         "cpus": 2,
         "memory": "8gb",
         "storage": "32gb"
     },
-    "postStartCommand": "sudo apt update && sudo apt install -y --no-install-recommends linux-headers-generic && netlab install -y grpc"
+    "postStartCommand": "netlab install -y grpc"
 }

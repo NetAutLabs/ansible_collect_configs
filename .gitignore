@@ -8,3 +8,4 @@ netlab/clab.yml
 netlab/hosts.yml
 netlab/netlab.lock
 netlab/netlab.snapshot.yml
+netlab/netlab.snapshot.pickle
